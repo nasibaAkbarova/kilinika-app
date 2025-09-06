@@ -9,7 +9,11 @@ function Navbar() {
     <NavLink to="/">Home</NavLink>
     <NavLink to="/login">Login</NavLink>
     <NavLink to="/layout">Layout</NavLink>
+
+    <NavLink to="/banner">Banner</NavLink>
+
     <NavLink to="/register">Register</NavLink>
+
   </div>
 </nav>
 

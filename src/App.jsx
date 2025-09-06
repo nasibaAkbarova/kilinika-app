@@ -6,7 +6,11 @@ import { lazy } from 'react'
 const Home = lazy (()=>import("./pages/home/Home"))
 const Login = lazy (()=>import("./pages/login/Login"))
 const Layout = lazy (()=>import("./components/layout/Layout"))
+
+const Banner = lazy (()=>import("./components/layout/Banner"))
+
 const Register = lazy (()=>import("./pages/register/Register"))
+
 
 function App() {
 
@@ -17,7 +21,10 @@ function App() {
       <Route path='/' element={<Home/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/layout' element={<Layout/>} />
-      <Route path='/register' element={<Register/>} />
+
+      <Route path='/banner' element={<Banner/>} />
+        <Route path='/register' element={<Register/>} />
+
     </Routes>
     
     </>
